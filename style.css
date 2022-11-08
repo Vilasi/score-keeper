@@ -31,7 +31,6 @@ p.is-one-quarter {
   color: hsl(348, 100%, 61%);
 }
 
-/* media below 930px .card max-width 60% */
 @media screen and (max-width: 930px) {
   .card {
     width: 60%;
