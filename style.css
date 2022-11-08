@@ -1,1 +1,49 @@
+.card {
+  width: 40%;
+  height: auto;
+}
 
+section.container {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  padding-bottom: 1rem;
+}
+
+p.is-one-quarter {
+  margin-bottom: 0 !important;
+  margin-right: 1rem;
+}
+
+#select-rounds {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.green {
+  color: hsl(141, 53%, 53%);
+}
+
+.red {
+  color: hsl(348, 100%, 61%);
+}
+
+/* media below 930px .card max-width 60% */
+@media screen and (max-width: 930px) {
+  .card {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 630px) {
+  .card {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card {
+    width: 100%;
+  }
+}

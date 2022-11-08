@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- <section class="section">
+      <div class="container level-item has-text-centered">
+        <h1 class="title">Hello World</h1>
+        <p class="subtitle">My first website with <strong>Bulma</strong>!</p>
+      </div>
+    </section> -->
+    <section class="container">
+      <div class="card">
+        <div class="card-image">
+          <figure class="image is-4by3">
+            <img
+              src="https://images.unsplash.com/photo-1611762348135-5b09d2f0390d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+              alt="Placeholder image"
+            />
+          </figure>
+        </div>
+        <header class="card-header">
+          <p class="card-header-title">Ping Pong Score Keeper</p>
+        </header>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content">
+              <p class="title is-1">
+                <span id="player-1-score" data-score="0"></span> to
+                <span id="player-2-score" data-score="0"></span>
+              </p>
+              <p class="subtitle is-6">Use the buttons below to keep score</p>
+            </div>
+          </div>
 
+          <div id="select-rounds" class="content">
+            <p class="is-one-quarter">
+              <b>To Begin Game, Select Winning Point Count</b>
+            </p>
+            <div class="select is-rounded is-small">
+              <select>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <footer class="card-footer">
+          <button disabled id="p1" class="card-footer-item button is-success">
+            Player 1: +1 Point
+          </button>
+          <button disabled id="p2" class="card-footer-item button is-info">
+            Player 2: +1 Point
+          </button>
+          <button id="reset" class="card-footer-item button is-danger">
+            Reset
+          </button>
+        </footer>
+      </div>
+    </section>
+
+    <script src="./app.js" async defer></script>
+  </body>
+</html>
